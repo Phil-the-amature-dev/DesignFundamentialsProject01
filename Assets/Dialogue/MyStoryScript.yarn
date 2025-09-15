@@ -1,0 +1,22 @@
+﻿title: Start
+---
+Hello traveler, find the shop keeper - he's a cool guy
+
+<<declare $quest = "find shopkeeper">>
+
+===
+
+title: TalkToShopKeeper
+---
+<<if $quest == "find shopkeeper">>
+  Buenos Dias Nacho Brochacho, I need money please gimmie a coin.
+  <<set $quest to "find coin">>
+<<elseif $quest == "find coin">>
+  Ay im so poor     
+  <<if has_item("Player", "shiny")>>
+     Dios Mio you have a coin, thx gng.
+  <<else>>
+     need me some coin, some scrach, some cheddar
+  <<endif>>  
+<<endif>>
+===
