@@ -16,7 +16,7 @@ public class Flashlight : MonoBehaviour
     void Update()
     {
         //toggles flashlight on or off when e is pressed. 
-        if (Input.GetKeyDown("e")){
+        if (Input.GetKeyDown("f")){
             lightSource.enabled = !lightSource.enabled;
         }
     }
