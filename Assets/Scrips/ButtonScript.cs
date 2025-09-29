@@ -12,7 +12,7 @@ public class ButtonScript : PlayerActivatable
     public Material greenState;
     void Start()
     {
-        
+      canRepeat = false;     
     }
 
     // Update is called once per frame
