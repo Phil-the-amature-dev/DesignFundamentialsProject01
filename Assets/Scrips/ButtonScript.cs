@@ -26,10 +26,6 @@ public class ButtonScript : PlayerActivatable
         puzzle.buttonNum += 1;
         Debug.Log(puzzle.buttonNum);
         GetComponent<Renderer>().material = greenState;
-        if (puzzle.buttonNum == puzzle.buttonGoal)
-        {
-            //Debug.Log("Goal Reached");
-            puzzle.isCompleted = true;
-        }
+
     }
 }

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ButtonPuzzle : MonoBehaviour
@@ -7,6 +8,8 @@ public class ButtonPuzzle : MonoBehaviour
     public int buttonGoal;
     [HideInInspector]
     public int buttonNum = 0;
+    public PuzzleDoorAnimationScript puzzleDoor;
+
     void Start()
     {
         
@@ -15,6 +18,10 @@ public class ButtonPuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (buttonNum >= buttonGoal)
+        {
+            puzzleDoor.Animate();
+            enabled = false;
+        }
     }
 }

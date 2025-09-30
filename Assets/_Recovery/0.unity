@@ -2180,47 +2180,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1275308497}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1722050633 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1262921173258985725, guid: b036a2b456a5bc541a7e3a1675969047,
-    type: 3}
-  m_PrefabInstance: {fileID: 4450272740808133109}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1722050634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722050633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1091cb5556eb94792c98641bfb816d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PuzzleDoorAnimationScript
-  target: {fileID: 1926074513}
---- !u!95 &1722050635
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722050633}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &1725861639 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6171065927392831707, guid: fa6868ee95c274c9180e91739967ec61,
@@ -4466,12 +4425,6 @@ Transform:
   - {fileID: 107760471}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1926074513 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1566947544794831935, guid: b036a2b456a5bc541a7e3a1675969047,
-    type: 3}
-  m_PrefabInstance: {fileID: 4450272740808133109}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1931358699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6719,9 +6672,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonPuzzle
   isCompleted: 0
-  buttonGoal: 4
+  buttonGoal: 5
   buttonNum: 0
-  puzzleDoor: {fileID: 1722050634}
 --- !u!4 &2065648274
 Transform:
   m_ObjectHideFlags: 0
@@ -7009,82 +6961,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d12d760236cfcc74a961f3dd127f12be, type: 3}
---- !u!1001 &4450272740808133109
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1262921173258985725, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_Name
-      value: PuzzleDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101936709883084299, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -14.047151
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101936709883084299, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.027
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101936709883084299, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -23.241562
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101936709883084299, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101936709883084299, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101936709883084299, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101936709883084299, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101936709883084299, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101936709883084299, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101936709883084299, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1262921173258985725, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1722050635}
-    - targetCorrespondingSourceObject: {fileID: 1262921173258985725, guid: b036a2b456a5bc541a7e3a1675969047,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1722050634}
-  m_SourcePrefab: {fileID: 100100000, guid: b036a2b456a5bc541a7e3a1675969047, type: 3}
 --- !u!1001 &5603209865621528293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7254,4 +7130,3 @@ SceneRoots:
   - {fileID: 99048996}
   - {fileID: 761479323}
   - {fileID: 2065648274}
-  - {fileID: 4450272740808133109}
