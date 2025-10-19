@@ -20,3 +20,82 @@ title: TalkToShopKeeper
   <<endif>>  
 <<endif>>
 ===
+
+title: MissionStart
+---
+Alright, finally made it in here.
+Can't beleive they assigned me to a station so far this close to the holidays. 
+Heh, really squeezing the most labour they can possibly get outta me...
+Oh well, Jobs a job, not like theres anyone else to work for in the star system. Gotta eat somehow.
+But why here? This place is a Ghost town. I couldn't even find records on when it was abbandoned?
+Whatever, I gotta find a terminal and establish a connection with homebase. 
+===
+
+title: LockedDoor
+---
+Huh, doors locked.
+This doors too old to be acces from my neurochip
+should be an overide button here.. or two
+good thing I brought a flashlight -f-
+<<set $quest to "meetScrubsQuest">>
+===
+
+title: meetScrubs
+---
+Huh? They sent another? About time!
+You've got no idea how long I've just spent trying to repair this damn terminal. 
+Man I'm so hungry, do they really expect us to survive through operations whith such small rations? 
+Anyways, I'm Scrubs, I assume you're here for the same reason I am
+... which we dont know, YET.
+With this terminal working now we should be able to get our instructions from homebase
+Let's get this done quick, this place gives me the creeps. 
+I mean seriously, why send an expedition this close to a black hole? I highly doubt an abandoned mining rigs gonna have anything THAT valuable.  
+<<if $quest == "meetScrubsQuest">>
+ <<set $quest to "contactHQQuest">>
+<<endif>>
+===
+
+title: contactHQ
+---
+<<if $quest == "contactHQQuest">>
+  INITIATING POST
+  POST SUCESSFULL
+  BOOTING STATION OS 
+  ...
+  ...
+  WELCOME
+  AQUILA CORP NEUROCHIP DETECTED - EXTRACTOR ID 7702eI
+  REQUEST CURRENT DIRECTIVES?
+  well, yeah
+  PING SENT 
+  ...
+  ...
+  DIRECTIVES RECEIVED
+  GAIN ACCESS TO STATION CENTRAL HUB AND AWAIT FURTHER INSTRUCTIONS 
+  END MESSAGE
+  *Scrubs looks over to you*
+  Huh, guess thats that
+  why'd the corp wanna restore this place? it's a junkyard
+  they can't possibly want to recomission it, especially with how close that black hole it is
+  unless this is another way of laying off without having to send severance packages
+  I get it, neurmail's expensive these days, heheh 
+  Anyways, we'll need to activate the backup power if we wanna get to the main hub.
+  could you take one for the team and re activate the station batteries? I'm like, really beat from this terminall
+  this button behind me should unlock the baterry room down the hall
+  according to the station doccumentation there are 3 ovveride buttons linked to the batteries
+  no schematics though, so you'll have to find them yourself. Sorry bro.
+  If you do get the doors to open then just head to the hub without me, i'll have to finnish up some wiring whilst i'm still down here
+  <<set $quets to "ReactivatePower">>
+<<endif>>
+
+===
+
+title: level1Note
+---
+you find an old paper note that reads: 
+To whoever keeps downloading unauthorised homebrews to the projector for films PLEASE STOP
+tamering with equipment without permission will garuantee a VERY DEEP pay cut
+You know Aquilla doesn't stand for employees stepping out of line so from the bottmom of my heart
+PLease stop, or else we'll all be eating the cheap and bland nutripaste for the next dozen cycles
+Synth meats already enough of a delecacy...
+===
