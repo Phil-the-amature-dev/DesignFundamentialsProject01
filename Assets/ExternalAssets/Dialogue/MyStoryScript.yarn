@@ -57,6 +57,9 @@ I mean seriously, why send an expedition this close to a black hole? I highly do
 
 title: contactHQ
 ---
+<<if $quest == "meetScrubsQuest">>
+ I should prabably adresst this dude first...
+<<endif>>
 <<if $quest == "contactHQQuest">>
   INITIATING POST
   POST SUCESSFULL
@@ -85,6 +88,7 @@ title: contactHQ
   according to the station doccumentation there are 3 ovveride buttons linked to the batteries
   no schematics though, so you'll have to find them yourself. Sorry bro.
   If you do get the doors to open then just head to the hub without me, i'll have to finnish up some wiring whilst i'm still down here
+  <<walk_to "NPC" "WalkToServerEvent">>
   <<set $quets to "ReactivatePower">>
 <<endif>>
 
