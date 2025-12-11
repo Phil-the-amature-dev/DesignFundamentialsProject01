@@ -1,4 +1,4 @@
-﻿title: Start
+title: Start
 ---
 Hello traveler, find the shop keeper - he's a cool guy
 
@@ -23,6 +23,7 @@ title: TalkToShopKeeper
 
 title: MissionStart
 ---
+<<set $quest to "Explore station">>
 Alright, finally made it in here.
 Can't beleive they assigned me to a station so far this close to the holidays. 
 Heh, really squeezing the most labour they can possibly get outta me...
@@ -37,7 +38,7 @@ Huh, doors locked.
 This doors too old to be acces from my neurochip
 should be an overide button here.. or two
 good thing I brought a flashlight -f-
-<<set $quest to "meetScrubsQuest">>
+<<set $quest to "Find a terminal">>
 ===
 
 title: meetScrubs
@@ -50,17 +51,17 @@ Anyways, I'm Scrubs, I assume you're here for the same reason I am
 With this terminal working now we should be able to get our instructions from homebase
 Let's get this done quick, this place gives me the creeps. 
 I mean seriously, why send an expedition this close to a black hole? I highly doubt an abandoned mining rigs gonna have anything THAT valuable.  
-<<if $quest == "meetScrubsQuest">>
- <<set $quest to "contactHQQuest">>
+<<if $quest == "Find a terminal">>
+ <<set $quest to "Contact HQ">>
 <<endif>>
 ===
 
 title: contactHQ
 ---
-<<if $quest == "meetScrubsQuest">>
+<<if $quest == "Find a terminal">>
  I should prabably adresst this dude first...
 <<endif>>
-<<if $quest == "contactHQQuest">>
+<<if $quest == "Contact HQ">>
   INITIATING POST
   POST SUCESSFULL
   BOOTING STATION OS 
@@ -89,7 +90,7 @@ title: contactHQ
   no schematics though, so you'll have to find them yourself. Sorry bro.
   If you do get the doors to open then just head to the hub without me, i'll have to finnish up some wiring whilst i'm still down here
   <<walk_to "NPC" "WalkToServerEvent">>
-  <<set $quets to "ReactivatePower">>
+  <<set $quest to "Reactivate power">>
 <<endif>>
 
 ===
@@ -102,4 +103,199 @@ tamering with equipment without permission will garuantee a VERY DEEP pay cut
 You know Aquilla doesn't stand for employees stepping out of line so from the bottmom of my heart
 PLease stop, or else we'll all be eating the cheap and bland nutripaste for the next dozen cycles
 Synth meats already enough of a delecacy...
+===
+
+
+
+
+// level 2
+
+title: level2Start
+---
+<<set $quest to "Find a terminal and run diagnostics">>
+...
+What the hell was that!?
+I better find a terminal and try to evaluate the actual health of this station
+===
+
+title: terminalDiagnostics
+---
+ASSESSING SYSTEMS
+SYSTEMS ONLINE
+ASSESSING POWER LEVELS 
+MAIN GENERATORS ONLINE - HEALTH FUNCTIONAL 
+ASSESSING STEERING CONTROLS
+WARNING! FACILITY THRUSTER OFFLINE - SCANS SHOW HEAVY PHYSICAL DAMAGE 
+HULL INTEGRIDY MOMENTARILY STABLE, IT IS ADVISED TO FOLLOW SAFTEY PROTOCOLS AND REPAIR DAMAGE AS SOON AS POSSIBLE
+...
+damn, something must have malthfunctioned
+I mean, I know this place is old, but even then its strange to see something break out of the blue just like that
+I gotta on with HQ 
+TERMINAL COMMAND ; SEND_PING<NEURICHIP.LOCAL_BASE>
+PING SENT
+...
+DIRECTIVES RECEIVED
+LOCATE AND RETREIVE STATION CORE
+YOU MUST ENSURE THAT ACCESS TO CORE DOES NOT FALL IN ANY PERSONS OUTSIDE AQUILLA CORP 
+FALIURE TO DO SO WILL RESULT IN IMMEDIATE DEMOTION OF EMPLOYEE POSITION
+END
+Damn, I gotta get to that core quick
+if anything happens to it, I bet both me and that guy will become street beggars in a week tops
+Speaking of which, I should find him
+<<set $quest to "Find Co-worker Scrubs">>
+===
+
+title: talkToScrubs
+---
+<<if $quest == "Find Co-worker Scrubs">>
+ Im not seeing things am I?
+ A thruster down, this close to a black hole
+ just my luck
+ Hey, you saw the directives too right? we gotta get movin quick 
+ Ive got good news and bad news
+ The good news is ive scanned most of this place, so I know where everything is
+ The bad news is that this whole tech graveyard is running on an old codebase, so we cant replicate any of the access cards with the software on our chips
+ theres a master computer in the offices with red access for the core room, but that place is locked down too
+ luckily, if this old employee records sheet that I found is true, there should be an overseer's desk somewhere in storage, the door behind you 
+ go find it quick, it should have a keycard for the offices
+ ill have to stay behind and reroute some power, if too much voltage gets through those faulty thrusters they may turn on without us being able to control them!
+ we gota move quick, who knows what can kill us here... or who
+ We are in the systems edge after all, you know, far from Aquilla's eyes
+ if those stories of corp hating psychos are true, they'd be taking place in somewhere like here... 
+ <<set $quest to "Obtain Office Access">>
+<<elseif $quest == "inform scrubs">>
+ I just had to mention it DIDN'T I?
+ before you ask yeah, I heard that too
+ we can't give up the core, what they'll make of us if we lose it... I have people to feed
+ they're bluffing though, they have to be
+ they cant damage the station any more or else they risk turning it into that black hole's breakfast, including the core
+ as long as the external hatches stay locked we should be safe, ill keep track of cam footage
+ Got the card? good, now get the red access and go straight to the core, no time to lose now
+ <<set $quest to "Get Core Room Access">>
+<<elseif $quest == "Get Core Room Access">>
+ can't hold them off for long, get that core
+<<elseif $quest == "Return to Co-Worker scrubs">>
+ Got the core? Nice!
+ I managed to hack that rouge ship, their tracking systems should be down
+ We can walk through the exit behind me, get in a shuttle and slip away 
+ It's almost over, we can got home from this mission just in time to do another one, ahah
+ but seriously, lets get moving. they're still trying to get in. 
+ <<set $quest to "Move to the exit">>
+<<endif>>
+===
+
+title: keycardOne
+---
+that should be the card
+huh? im getting a nerocom request from somewhere out the station
+could be another extractor, let me patch them in
+<color=red>Whatever you came for, it's not worth what you'll get out of it</color>
+<color=red>the core, forget about it and no one gets hurt</color>
+<color=red>we have more of what made those thrusters melt, please, don't play the hero</color>
+<color=red>leave while you can</color>
+oh god, ive gotta get to Scrubs
+<<set $quest to "inform scrubs">>
+===
+
+
+title: transmition
+---
+RED ACCESS TRANSFERED
+NOTE ; ANY UNAUTHERISED TAMPERING WITH CORE WILL LEAD TO IMMEDIATE TERMINATION
+Ok, thats done
+<color=red>you're an extractor arent you?</color>
+<color=red>you have to be, not like they'd send someone of "value" all the way out here</color>
+<color=red>Ive met others like you, even befriended some</color>
+<color=red>we're not so different you know, except for the strings around your wrists, decided to take mine off years ago </color>
+<color=red>let me guess, they've started straight up chucking faliures to the strees by now </color>
+<color=red>was only a matter of time till they could afford it</color>
+<color=red>your like a drone, extractor</color>
+<color=red>a disposable oversight to do the dirty work </color>
+<color=red>to think a battery can dictate your livleyhood </color>
+<color=red>step out of line and... poof</color>
+<color=red>you get consumed in a sea of misery</color>
+<color=red>a sea only inches far enough for you to stay dry, ever lastingly waiting for you to slip up</color>
+...
+<color=red>damn, that was quite deep, never knew I was such a phillosipher</color>
+<color=red>you're smart to lock yourself in, but it won't keep me out forever </color>
+<color=red>i'm getting that core. </color>
+
+===
+title: transmition2
+---
+Got the Core!
+<color=red>they took my neurochip, yknow?</color>
+<color=red>my identity, money, contacts all lost</color>
+<color=red>or I "returned company property" as they would have liked to say it </color>
+<color=red>quite a tame description, considering I wasn't necesarilly lying in that surgical chair out of my own volition</color>
+<color=red>all cause of a split second decision to prioratize life over property </color>
+<color=red>yeah yeah, I'm being vauge and all but does it matter WHY I got cut loose? </color>
+<color=red>what matters is how they do it</color>
+<color=red>what matters is the mold they want you to fit into </color>
+<color=red>a loyal husk, blindly following "Directives"</color>
+<color=red>the perfect servant is one completly relient to you</color>
+<color=red>eating your food, living in your home, carrying your name</color>
+<color=red>one wrong step and you lose that name</color>
+<color=red>and without a name... your a nobody</color>
+<color=red>or atleast a nobody in their world</color>
+<color=red>and being a nobody in their world... </color>
+<color=red>I'd take a black hole over the sea</color>
+<<set $quest to "Return to Co-Worker scrubs">>
+===
+
+
+
+title: transmition3
+---
+<color=red>okay, okay, you win. </color>
+<color=red>I'm beat, really. You can walk out of here if you want </color>
+<color=red>but at least hear my pitch okay? </color>
+<color=red>I haven't been rambling in your ear for nothing </color>
+<color=red>so, here goes </color>
+<color=red>that core is worthless...</color>
+<color=red>or, at least to Aquilla</color>
+<color=red>come on, ever since they bought out rights to all fabricator technology these batteries are cheaper to make than Synthmeat</color>
+<color=red>it's getting recycled or maybe even trashed the second you turn it in</color>
+<color=red>but for us, people on the edge, that battery could help us thrive out</color>
+<color=red>and maybe even make something of a life out here, one worth living</color>
+<color=red>away from Aquilla, the only place in the whole system that they don't own. </color>
+<color=red>a place where you can exist away from their watchfull eye </color>
+<color=red>a field where you can work for yourself, not a tyrant in a rocking chair </color>
+<color=red>see, thay hate that</color>
+<color=red>they REALLY hate that </color>
+<color=red>they want to control everyone, everything</color>
+<color=red>they want to dictate humanity's evolution, make it revolve around them </color>
+<color=red>they want everything to opperate they way they envision</color>
+<color=red>in their picture </color>
+<color=red>eveything out the picture, obscure, fed to the sea </color>
+<color=red>you weren't sent to retreive property</color>
+<color=red>you were sent to keep it out of our hands</color>
+<color=red>to keep us obscure</color>
+<color=red>to hold us down, without a chance of ever becoming something of ourselves</color>
+<color=red>something other than their vision </color>
+<color=red>your a dam, keeping the ocean at bay </color>
+<color=red>because if word of actual settelments beyond Aquilla space starts coming out</color>
+<color=red>the the vision will be ruined</color>
+<color=red>the ocean would leak through the picture frame</color>
+<color=red>Aquilla would no longer be a constant that is the only thing we can live under</color>
+<color=red>people would have choice </color>
+<color=red>have you taken in where you are?</color>
+<color=red>some would kill for this oppertunity</color>
+<color=red>the strings are loose, extractor, looser than they ever have been</color>
+<color=red>take them off</color>
+<color=red>dissapear into the edge</color>
+<color=red>join us</color>
+<color=red>we've got technicians that can disable tracking from your chip</color>
+<color=red>not that it would matter, to Aquilla it's just another pawn lost to sea</color>
+<color=red>but to you, the discovery of freedom</color>
+<color=red>a new life, under no one </color>
+<color=red>a chance to act on your own </color>
+<color=red>this can be the beggining of your story</color>
+<color=red>the story you can write</color>
+<color=red>we're in one of the docking bays, waiting for you. </color>
+<color=red>if you take the right door, then that story ends, and you return back to you old life, into the ceartainty within the picture frames</color>
+<color=red>but if you take the right door</color>
+<color=red>then I can show you just how deep the sea goes</color>
+<color=red>and the light at the end of it</color>
+<<set $quest to "Make a choice">>
 ===
