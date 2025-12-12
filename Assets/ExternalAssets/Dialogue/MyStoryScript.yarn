@@ -294,7 +294,7 @@ title: transmition3
 <color=red>the story you can write</color>
 <color=red>we're in one of the docking bays, waiting for you. </color>
 <color=red>if you take the right door, then that story ends, and you return back to you old life, into the ceartainty within the picture frames</color>
-<color=red>but if you take the right door</color>
+<color=red>but if you take the left door</color>
 <color=red>then I can show you just how deep the sea goes</color>
 <color=red>and the light at the end of it</color>
 <<set $quest to "Make a choice">>
