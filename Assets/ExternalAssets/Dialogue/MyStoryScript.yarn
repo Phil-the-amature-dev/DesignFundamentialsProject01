@@ -299,3 +299,47 @@ title: transmition3
 <color=red>and the light at the end of it</color>
 <<set $quest to "Make a choice">>
 ===
+
+
+title: officeNote
+---
+Transcript 01 - crew member EK2077
+hey, I can't get into the core room. did someone change the password?
+How am I supposed to fix the ventilation without a pass?
+Hello? somebody?
+===
+title: officeNote2
+---
+Transcript 02 - crew member EK4465
+Yeah, they changed the password
+You would have known if you actually wen't to the meetings...
+===
+title: officeNote3
+---
+Transcript 03 - crew member EK2077
+Hey man it's not my fault corporate got me working the entire station
+these vents are a 5 man job and they're too cheap to even give me a proper toolkit
+===
+title: officeNote4
+---
+Transcript 04 - crew member EK4465
+Yeah I hear you man, whole place is understaffed
+I even hear some rumors of them moving us out of here and just abandoning the facility 
+like I get it but, this abrubtly? as if they're not aknowledging that this place has been home for the last 10 years
+anyways, I can't tell you the code directly due to security
+but just add the version number of the networks latest os plus today's year. That should work
+===
+
+title: versionCheck
+---
+Computer out of date! 
+please download latest os version 23 
+===
+
+title: Callendar
+---
+Unable to update callendar!
+system clock frozen at 2550 April 12 12_37
+===
+
+
