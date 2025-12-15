@@ -62,21 +62,21 @@ title: contactHQ
  I should prabably adresst this dude first...
 <<endif>>
 <<if $quest == "Contact HQ">>
-  INITIATING POST
-  POST SUCESSFULL
-  BOOTING STATION OS 
-  ...
-  ...
-  WELCOME
-  AQUILA CORP NEUROCHIP DETECTED - EXTRACTOR ID 7702eI
-  REQUEST CURRENT DIRECTIVES?
+  <color=green>INITIATING POST</color>
+  <color=green>POST SUCESSFULL</color>
+  <color=green>BOOTING STATION OS</color> 
+  <color=green>...</color>
+  <color=green>...</color>
+  <color=green>WELCOME</color>
+  <color=green>AQUILA CORP NEUROCHIP DETECTED - EXTRACTOR ID 7702eI</color>
+  <color=green>REQUEST CURRENT DIRECTIVES?</color>
   well, yeah
-  PING SENT 
-  ...
-  ...
-  DIRECTIVES RECEIVED
-  GAIN ACCESS TO STATION CENTRAL HUB AND AWAIT FURTHER INSTRUCTIONS 
-  END MESSAGE
+  <color=green>PING SENT</color>
+  <color=green>...</color>
+  <color=green>...</color>
+  <color=green>DIRECTIVES RECEIVED</color>
+  <color=green>GAIN ACCESS TO STATION CENTRAL HUB AND AWAIT FURTHER INSTRUCTIONS</color> 
+  <color=green>END MESSAGE</color>
   *Scrubs looks over to you*
   Huh, guess thats that
   why'd the corp wanna restore this place? it's a junkyard
@@ -97,7 +97,7 @@ title: contactHQ
 
 title: level1Note
 ---
-you find an old paper note that reads: 
+you find an old paper note that reads; 
 To whoever keeps downloading unauthorised homebrews to the projector for films PLEASE STOP
 tamering with equipment without permission will garuantee a VERY DEEP pay cut
 You know Aquilla doesn't stand for employees stepping out of line so from the bottmom of my heart
@@ -120,25 +120,25 @@ I better find a terminal and try to evaluate the actual health of this station
 
 title: terminalDiagnostics
 ---
-ASSESSING SYSTEMS
-SYSTEMS ONLINE
-ASSESSING POWER LEVELS 
-MAIN GENERATORS ONLINE - HEALTH FUNCTIONAL 
-ASSESSING STEERING CONTROLS
-WARNING! FACILITY THRUSTER OFFLINE - SCANS SHOW HEAVY PHYSICAL DAMAGE 
-HULL INTEGRIDY MOMENTARILY STABLE, IT IS ADVISED TO FOLLOW SAFTEY PROTOCOLS AND REPAIR DAMAGE AS SOON AS POSSIBLE
-...
+<color=green>ASSESSING SYSTEMS</color>
+<color=green>SYSTEMS ONLINE</color>
+<color=green>ASSESSING POWER LEVELS </color>
+<color=green>MAIN GENERATORS ONLINE - HEALTH FUNCTIONAL</color> 
+<color=green>ASSESSING STEERING CONTROLS</color>
+<color=green>WARNING! FACILITY THRUSTER OFFLINE - SCANS SHOW HEAVY PHYSICAL DAMAGE</color> 
+<color=green>HULL INTEGRIDY MOMENTARILY STABLE, IT IS ADVISED TO FOLLOW SAFTEY PROTOCOLS AND REPAIR DAMAGE AS SOON AS POSSIBLE</color>
+<color=green>...</color>
 damn, something must have malthfunctioned
 I mean, I know this place is old, but even then its strange to see something break out of the blue just like that
 I gotta on with HQ 
-TERMINAL COMMAND ; SEND_PING<NEURICHIP.LOCAL_BASE>
-PING SENT
-...
-DIRECTIVES RECEIVED
-LOCATE AND RETREIVE STATION CORE
-YOU MUST ENSURE THAT ACCESS TO CORE DOES NOT FALL IN ANY PERSONS OUTSIDE AQUILLA CORP 
-FALIURE TO DO SO WILL RESULT IN IMMEDIATE DEMOTION OF EMPLOYEE POSITION
-END
+<color=green>TERMINAL COMMAND ; SEND_PING<NEURICHIP.LOCAL_BASE></color>
+<color=green>PING SENT</color>
+<color=green>...</color>
+<color=green>DIRECTIVES RECEIVED</color>
+<color=green>LOCATE AND RETREIVE STATION CORE</color>
+<color=green>YOU MUST ENSURE THAT ACCESS TO CORE DOES NOT FALL IN ANY PERSONS OUTSIDE AQUILLA CORP</color>
+<color=green>FALIURE TO DO SO WILL RESULT IN IMMEDIATE DEMOTION OF EMPLOYEE POSITION</color>
+<color=green>END</color>
 Damn, I gotta get to that core quick
 if anything happens to it, I bet both me and that guy will become street beggars in a week tops
 Speaking of which, I should find him
@@ -303,43 +303,43 @@ title: transmition3
 
 title: officeNote
 ---
-Transcript 01 - crew member EK2077
-hey, I can't get into the core room. did someone change the password?
-How am I supposed to fix the ventilation without a pass?
-Hello? somebody?
+<color=green>Transcript 01 - crew member EK2077</color>
+<color=green>hey, I can't get into the core room. did someone change the password?</color>
+<color=green>How am I supposed to fix the ventilation without a pass?</color>
+<color=green>Hello? somebody?</color>
 ===
 title: officeNote2
 ---
-Transcript 02 - crew member EK4465
-Yeah, they changed the password
-You would have known if you actually wen't to the meetings...
+<color=green>Transcript 02 - crew member EK4465</color>
+<color=green>Yeah, they changed the password</color>
+<color=green>You would have known if you actually wen't to the meetings...</color>
 ===
 title: officeNote3
 ---
-Transcript 03 - crew member EK2077
-Hey man it's not my fault corporate got me working the entire station
-these vents are a 5 man job and they're too cheap to even give me a proper toolkit
+<color=green>Transcript 03 - crew member EK2077</color>
+<color=green>Hey man it's not my fault corporate got me working the entire station</color>
+<color=green>these vents are a 5 man job and they're too cheap to even give me a proper toolkit</color>
 ===
 title: officeNote4
 ---
-Transcript 04 - crew member EK4465
-Yeah I hear you man, whole place is understaffed
-I even hear some rumors of them moving us out of here and just abandoning the facility 
-like I get it but, this abrubtly? as if they're not aknowledging that this place has been home for the last 10 years
-anyways, I can't tell you the code directly due to security
-but just add the version number of the networks latest os plus today's year. That should work
+<color=green>Transcript 04 - crew member EK4465</color>
+<color=green>Yeah I hear you man, whole place is understaffed</color>
+<color=green>I even hear some rumors of them moving us out of here and just abandoning the facility</color> 
+<color=green>like I get it but, this abrubtly? as if they're not aknowledging that this place has been home for the last 10 years</color>
+<color=green>anyways, I can't tell you the code directly due to security</color>
+<color=green>but just add the version number of the networks latest os plus today's year. That should work</color>
 ===
 
 title: versionCheck
 ---
-Computer out of date! 
-please download latest os version 23 
+<color=green>Computer out of date!</color> 
+<color=green>please download latest os version 23 </color>
 ===
 
 title: Callendar
 ---
-Unable to update callendar!
-system clock frozen at 2550 April 12 12_37
+<color=green>Unable to update callendar!</color>
+<color=green>system clock frozen at 2550 April 12 12_37</color>
 ===
 
 
