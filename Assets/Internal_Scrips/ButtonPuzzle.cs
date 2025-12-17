@@ -21,6 +21,7 @@ public class ButtonPuzzle : MonoBehaviour
         if (buttonNum >= buttonGoal)
         {
             puzzleDoor.Animate();
+            puzzleDoor.GetComponent<FMODEventScript>().Activate();
             enabled = false;
         }
     }

@@ -34,9 +34,8 @@ Whatever, I gotta find a terminal and establish a connection with homebase.
 
 title: LockedDoor
 ---
-Huh, doors locked.
-This doors too old to be acces from my neurochip
-should be an overide button here.. or two
+Huh, doors still locked.
+It must have a dual lock mechanism, a second button must be here somewhere
 good thing I brought a flashlight -f-
 <<set $quest to "Find a terminal">>
 ===
